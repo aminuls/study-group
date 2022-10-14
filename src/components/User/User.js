@@ -17,15 +17,15 @@ const User = () => {
          <div className="row row-cols-1 row-cols-md-3 mt-4 mx-3 p-3 rounded justify-content-center" style={{backgroundColor:"#282c34"}}>
             <div className="col">
                <h4>75<small className="text-muted fs-6">kg</small></h4>
-               <p className="fw-semibold text-muted">Weight</p>
+               <p className="fw-semibold text-muted mb-1">Weight</p>
             </div>
             <div className="col">
                <h4>6.5</h4>
-               <p className="fw-semibold text-muted">Height</p>
+               <p className="fw-semibold text-muted mb-1">Height</p>
             </div>
             <div className="col">
                <h4>25<small className="text-muted fs-6">yrs</small></h4>
-               <p className="fw-semibold text-muted">Age</p>
+               <p className="fw-semibold text-muted mb-1">Age</p>
             </div>
          </div>
       </div>
