@@ -11,13 +11,13 @@ const CardContainer = () => {
    }, []);
    console.log(cards);
    return (
-      <div>
+      <div className="col-9 mt-4 mb-5">
          <div className="d-flex align-items-center gap-2">
             <img src="images/logo.png" alt="" style={{ width: "100px" }} />
             <h2 className="m-0" style={{fontFamily:"cursive"}}>STUDY GROUP</h2>
          </div>
          <h5 className="pt-3 pb-1">Select today's subject</h5>
-         <div className="row row-cols-1 row-cols-md-3 g-4 col-9">
+         <div className="row row-cols-1 row-cols-md-3 g-4">
             {cards.map((card) => (
                <Card card={card}></Card>
             ))}

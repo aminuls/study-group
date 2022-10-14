@@ -2,12 +2,14 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import CardContainer from "./components/CardContainer/CardContainer";
+import UserDetails from "./components/UserDetails/UserDetails";
 
 
 function App() {
    return (
-      <div className="App col mt-4 mb-5 ms-5">
+      <div className="App col d-flex gap-5 overflow-hidden ms-4">
          <CardContainer></CardContainer>
+         <UserDetails></UserDetails>
       </div>
    );
 }
