@@ -6,7 +6,7 @@ import './UserDetails.css'
 
 const UserDetails = () => {
    return (
-      <div className="col-3 pt-4 userDetails" style={{backgroundColor: "#34353b"}}>
+      <div className="col-12 col-md-5 col-lg-4 col-xl-3 pt-4 userDetails d-md-block" id='userDetails' style={{backgroundColor: "#34353b"}}>
          <User></User>
          <Break></Break>
          <Details></Details>

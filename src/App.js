@@ -7,7 +7,7 @@ import UserDetails from "./components/UserDetails/UserDetails";
 
 function App() {
    return (
-      <div className="App col d-flex gap-5 overflow-hidden ms-4">
+      <div className="App col d-flex gap-5 overflow-hidden justify-content-center justify-content-md-start">
          <CardContainer></CardContainer>
          <UserDetails></UserDetails>
       </div>
