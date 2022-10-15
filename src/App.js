@@ -17,7 +17,7 @@ function App() {
    };
    return (
       <div className="App col d-flex gap-5 overflow-hidden justify-content-center justify-content-md-start">
-         <div>
+         <div className="d-flex flex-column align-items-center align-items-md-start">
             <CardContainer addedList={addedList}></CardContainer>
             <Accord></Accord>
          </div>
