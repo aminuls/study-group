@@ -5,14 +5,14 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const CardContainer = () => {
+const CardContainer = (props) => {
+   const {addedList} = props;
    const [cards, setCards] = useState([]);
    useEffect(() => {
       fetch("FakeData.json")
          .then((res) => res.json())
          .then((data) => setCards(data));
    }, []);
-
    const menuToggle=()=>{
       const menuIcon = document.getElementById("menuIcon");
       const userDetails = document.getElementById("userDetails");
@@ -23,7 +23,7 @@ const CardContainer = () => {
       ic1.classList.toggle("d-none");
       ic2.classList.toggle("d-block")
    }
-
+   
    return (
 
 
@@ -43,7 +43,7 @@ const CardContainer = () => {
          <h5 className="pt-3 pb-1">Select today's subject</h5>
          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             {cards.map((card) => (
-               <Card card={card}></Card>
+               <Card card={card} addedList={addedList}></Card>
             ))}
          </div>
       </div>

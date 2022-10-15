@@ -2,7 +2,13 @@ import React from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 const Card = (props) => {
-   const {title, image, body, age, time, button} = props.card
+   const {title, image, body, age, time, button} = props.card;
+   const {addedList} = props;
+   /* let totalTime = 0;
+   const addedList = (time)=>{
+      totalTime += time;
+      console.log(totalTime);
+   } */
    return (
       <div className="col">
          <div className="card h-100 text-dark border-warning">
@@ -11,10 +17,10 @@ const Card = (props) => {
                <h5 className="card-title">{title}</h5>
                <p className="card-text">{body}</p>
                <h6>For Age: {age}</h6>
-               <h6>Time required: {time}</h6>
+               <h6>Time required: {time}m</h6>
             </div>
             <div className="d-flex justify-content-center pb-2">
-               <button className="btn btn-info fw-semibold fs-5 px-5">{button}</button>
+               <button className="btn btn-info fw-semibold fs-5 px-5" onClick={()=>addedList(time)}>{button}</button>
             </div>
          </div>
       </div>

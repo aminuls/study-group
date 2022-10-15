@@ -3,7 +3,7 @@
       "title": "Mathematics",
       "body": "Mathematics is the science that deals with the logic of shape, quantity and arrangement. Math is all around us, in everything we do.",
       "image": "images/math.png",
-      "time": "45m",
+      "time": 45,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -11,7 +11,7 @@
       "title": "Physics",
       "body": "Physics is the natural science that studies matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force",
       "image": "images/physics.png",
-      "time": "45m",
+      "time": 45,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -19,7 +19,7 @@
       "title": "Chemistry",
       "body": "Chemistry is the study of matter, analyzing its structure, properties and behavior to see what happens when they change in chemical reactions",
       "image": "images/chemistry.png",
-      "time": "60m",
+      "time": 60,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -27,7 +27,7 @@
       "title": "Higher Math",
       "body": "Higher Mathematics is mathematics of more advanced content than ordinary arithmetic and algebra, geometry, trigonometry, and beginning calculus",
       "image": "images/higher-math.png",
-      "time": "60m",
+      "time": 60,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -35,7 +35,7 @@
       "title": "Biology",
       "body": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field.",
       "image": "images/biology.png",
-      "time": "45m",
+      "time": 45,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -43,7 +43,7 @@
       "title": "Bangla",
       "body": "Bengali language, an eastern Indo-Aryan language. The endonym of Bengal, a geographical and ethno-linguistic region in South Asia. Bangla- a prefix indicating Bangladesh",
       "image": "images/bangla.png",
-      "time": "30m",
+      "time": 30,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -51,7 +51,7 @@
       "title": "English",
       "body": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England.",
       "image": "images/english.png",
-      "time": "45m",
+      "time": 45,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -59,7 +59,7 @@
       "title": "ICT",
       "body": "ICT, or information and communications technology or technologies, is the infrastructure and components that enable modern computing.",
       "image": "images/ict.png",
-      "time": "30m",
+      "time": 30,
       "age": "15-19",
       "button": "Add to list"
    },
@@ -67,7 +67,7 @@
       "title": "Arabic",
       "body": "Arabic is a Semitic language spoken primarily across the Arab world. Having emerged in the 1st century, it is named after the Arab people;",
       "image": "images/arabic.png",
-      "time": "30m",
+      "time": 30,
       "age": "15-19",
       "button": "Add to list"
    }
