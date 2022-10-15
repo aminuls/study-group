@@ -13,15 +13,11 @@ const CardContainer = (props) => {
          .then((res) => res.json())
          .then((data) => setCards(data));
    }, []);
+   const [toggle, setToggle] = useState(false);
    const menuToggle=()=>{
-      const menuIcon = document.getElementById("menuIcon");
+      setToggle(!toggle);
       const userDetails = document.getElementById("userDetails");
-      const ic1 = document.getElementById("ic1");
-      const ic2 = document.getElementById("ic2");
       userDetails.classList.toggle("d-block");
-      menuIcon.classList.toggle("position-fixed");
-      ic1.classList.toggle("d-none");
-      ic2.classList.toggle("d-block")
    }
    
    return (
@@ -35,9 +31,9 @@ const CardContainer = (props) => {
                   STUDY GROUP
                </h2>
             </div>
-            <div className="d-md-none" id="menuIcon" onClick={menuToggle} style={{zIndex:"1", right:"17px"}}>
-            <FontAwesomeIcon icon={faBarsStaggered} className="display-4" id="ic1" style={{transform:"rotate(180deg)"}}/>
-            <FontAwesomeIcon icon={faXmark} className="display-4" id="ic2"/>
+            <div className={toggle?"position-fixed":"d-md-none"} onClick={menuToggle} style={{zIndex:"1", right:"17px"}}>
+            <FontAwesomeIcon icon={faBarsStaggered} className={`display-4 ${toggle?"d-none":"d-block"}`} style={{transform:"rotate(180deg)"}}/>
+            <FontAwesomeIcon icon={faXmark} className={`display-4 ${toggle?"d-block":"d-none"}`}  />
             </div>
          </div>
          <h5 className="pt-3 pb-1">Select today's subject</h5>

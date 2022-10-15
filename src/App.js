@@ -5,12 +5,15 @@ import "./App.css";
 import CardContainer from "./components/CardContainer/CardContainer";
 import UserDetails from "./components/UserDetails/UserDetails";
 
-
 function App() {
-   const [totalTime, setTotalTime] = useState(0);
-   const addedList = (time)=>{
-      setTotalTime(totalTime + time)
-   }
+   const getItem = localStorage.getItem("Time");
+   const gotTime = getItem ? JSON.parse(getItem) : 0;
+   const [totalTime, setTotalTime] = useState(gotTime);
+   const addedList = (time) => {
+      const finalTime = gotTime + time;
+      setTotalTime(finalTime);
+      localStorage.setItem("Time", JSON.stringify(finalTime));
+   };
    return (
       <div className="App col d-flex gap-5 overflow-hidden justify-content-center justify-content-md-start">
          <CardContainer addedList={addedList}></CardContainer>
