@@ -14,14 +14,25 @@ function Accord() {
             <Accordion.Item eventKey="1">
                <Accordion.Header>Tell the differences between props and state?</Accordion.Header>
                <Accordion.Body>
-                  Props are known as properties it can be used to pass data from one component to another. Props are passed via component properties, they're not reactive. Props cannot be modified, read-only, and Immutable.<br/> The state represents parts of an Application that can change. Each component can have its State. State are variables that react will react , updating the UI when values changes. The state is Mutable and It is local to the component only.
+                  Props are known as properties it can be used to pass data from one component to another. Props are passed via component properties, they're not reactive. Props cannot be modified, read-only, and Immutable.
+                  <br /> The state represents parts of an Application that can change. Each component can have its State. State are variables that react will react , updating the UI when values changes. The state is Mutable and It is local to the
+                  component only.
                </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
                <Accordion.Header>When we use useEffect except data loading?</Accordion.Header>
                <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  The useEffect Hook Usages <br />
+                  1. Side Effect Runs After Every Render
+                  <br />
+                  2. Side Effect Runs Only Once After Initial Render
+                  <br />
+                  3. Side Effect Runs After State Value Changes
+                  <br />
+                  4. Side Effect Runs After Props Value Change
+                  <br />
+                  5. Side Effect Runs After Props and State Value Change
+                  <br /> 6. Side EffectCleanup
                </Accordion.Body>
             </Accordion.Item>
          </Accordion>
