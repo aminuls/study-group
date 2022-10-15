@@ -21,8 +21,6 @@ const CardContainer = (props) => {
    }
    
    return (
-
-
       <div className="col-11 col-md-7 ms-md-3 col-lg-8 col-xl-9 mt-4 mb-5">
          <div className="d-flex align-items-center justify-content-between">
             <div className="d-flex align-items-center gap-2">

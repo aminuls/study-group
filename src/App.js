@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Accord from "./components/Accordion/Accordion";
 import CardContainer from "./components/CardContainer/CardContainer";
 import UserDetails from "./components/UserDetails/UserDetails";
 
@@ -16,7 +17,10 @@ function App() {
    };
    return (
       <div className="App col d-flex gap-5 overflow-hidden justify-content-center justify-content-md-start">
-         <CardContainer addedList={addedList}></CardContainer>
+         <div>
+            <CardContainer addedList={addedList}></CardContainer>
+            <Accord></Accord>
+         </div>
          <UserDetails grandTotal={totalTime}></UserDetails>
       </div>
    );
